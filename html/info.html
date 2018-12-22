@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+<head>
+	<title>Info Page</title>
+</head>
+<body>
+	<h2 id="time">Current Time: {0}</h2>
+	<h2 id="processors">Logical Processors: {1}<h2>
+</body>
+<script>
+var currentdate = new Date().toLocaleString();
+document.getElementById("time").textContent = "Current Time: " + currentdate;
+document.getElementById("processors").textContent = "Logical Processors: " + navigator.hardwareConcurrency;
+</script>
+</html>
