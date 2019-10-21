@@ -1,0 +1,29 @@
+for (int i = (len / 2 + len % 2) - 1; i >= 0; i--)
+	{
+		for (int ws = 0; ws < i; ws++)
+		{
+			cout << " ";
+		}
+		
+		for (int ch = i; ch < len-i; ch++)
+		{
+			cout << text[ch];
+		}
+
+		cout << endl;
+	}
+
+	for (int i = 1; i < (len / 2 + len % 2); i++)
+	{
+		for (int ws = 0; ws < i; ws++)
+		{
+			cout << " ";
+		}
+
+		for (int ch = i; ch < len - i; ch++)
+		{
+			cout << text[ch];
+		}
+
+		cout << endl;
+	}
